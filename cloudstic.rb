@@ -5,21 +5,21 @@
 class Cloudstic < Formula
   desc "Content-addressable, encrypted backup tool for Google Drive, OneDrive, and local files"
   homepage "https://github.com/cloudstic/cli"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Cloudstic/cli/releases/download/v1.1.0/cloudstic_1.1.0_darwin_amd64.tar.gz"
-      sha256 "45bd3c467516048a8287225e6db0ee29ace2025e2f6d6ec03eb1ec095f09def5"
+      url "https://github.com/Cloudstic/cli/releases/download/v1.2.0/cloudstic_1.2.0_darwin_amd64.tar.gz"
+      sha256 "5aab66daf09dacee36db1dc8d2d8e1119cecff8328cfa1bd22c0bbc3a378637b"
 
       define_method(:install) do
         bin.install "cloudstic"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Cloudstic/cli/releases/download/v1.1.0/cloudstic_1.1.0_darwin_arm64.tar.gz"
-      sha256 "0f262b4fb23b550654700c2d172afcc614ad330b8150c1e3cd1fd362fa595323"
+      url "https://github.com/Cloudstic/cli/releases/download/v1.2.0/cloudstic_1.2.0_darwin_arm64.tar.gz"
+      sha256 "5712d8c4ac24ddad1d7a23b5ddecf011dc500ee5d6d519d3fb5008e79701663b"
 
       define_method(:install) do
         bin.install "cloudstic"
@@ -29,15 +29,15 @@ class Cloudstic < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Cloudstic/cli/releases/download/v1.1.0/cloudstic_1.1.0_linux_amd64.tar.gz"
-      sha256 "08130dad529ae7cabe61b86807502017d07d7dd21f675c6f59268fc46b115b1f"
+      url "https://github.com/Cloudstic/cli/releases/download/v1.2.0/cloudstic_1.2.0_linux_amd64.tar.gz"
+      sha256 "7d1133065ac97fdefd743ee3fa276094916fcd0c9b06df2fdfdb481efe5c60fa"
       define_method(:install) do
         bin.install "cloudstic"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Cloudstic/cli/releases/download/v1.1.0/cloudstic_1.1.0_linux_arm64.tar.gz"
-      sha256 "7b6b541d7d2a5d7595cfa3133bda4cfa57429a8b80206303685a3f2ebd6bae5f"
+      url "https://github.com/Cloudstic/cli/releases/download/v1.2.0/cloudstic_1.2.0_linux_arm64.tar.gz"
+      sha256 "48a83b15fc03db1d329483083aab14d101e1b0e6ac1c5045fddcfbd90e75231f"
       define_method(:install) do
         bin.install "cloudstic"
       end
